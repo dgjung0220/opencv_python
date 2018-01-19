@@ -3,7 +3,7 @@ import cv2
 from matplotlib import pyplot as plt
 
 img1 = cv2.imread('./test_image/ET/et000.jpg', 0)
-img2 = cv2.imread('./test_image/ET/et008.jpg', 0)
+img2 = cv2.imread('./test_image/ET/et002.jpg', 0)
 
 def use_orb() :
     # Initiate SIFT detecter ORB(Oriented FAST and Rotated BRIEF)
@@ -36,3 +36,6 @@ def use_brisk() :
     img = cv2.drawKeypoints(img1, keypoint, img1)
     plt.imshow(img)
     plt.show()
+
+
+use_brisk()
